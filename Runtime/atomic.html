@@ -1,0 +1,525 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>atomic · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="associate.html" />
+    
+    
+    <link rel="prev" href="kvo.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../MemoryManager/">
+            
+                <a href="../MemoryManager/">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../MemoryManager/weak.html">
+            
+                <a href="../MemoryManager/weak.html">
+            
+                    
+                    weak 实现原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../MemoryManager/autoreleasepool.html">
+            
+                <a href="../MemoryManager/autoreleasepool.html">
+            
+                    
+                    Autoreleasepool 实现原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../MemoryManager/memoryleak.html">
+            
+                <a href="../MemoryManager/memoryleak.html">
+            
+                    
+                    内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Basic/">
+            
+                <a href="../Basic/">
+            
+                    
+                    Foudation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="category.html">
+            
+                <a href="category.html">
+            
+                    
+                    分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="kvo.html">
+            
+                <a href="kvo.html">
+            
+                    
+                    KVO && KVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="atomic.html">
+            
+                <a href="atomic.html">
+            
+                    
+                    atomic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="associate.html">
+            
+                <a href="associate.html">
+            
+                    
+                    关联对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../runloop/">
+            
+                <a href="../runloop/">
+            
+                    
+                    Runloop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../design/">
+            
+                <a href="../design/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../design/architecture.html">
+            
+                <a href="../design/architecture.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../network/">
+            
+                <a href="../network/">
+            
+                    
+                    网络题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../multiThread/">
+            
+                <a href="../multiThread/">
+            
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../datastruct/">
+            
+                <a href="../datastruct/">
+            
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../system/">
+            
+                <a href="../system/">
+            
+                    
+                    系统原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../performance/">
+            
+                <a href="../performance/">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../apply/">
+            
+                <a href="../apply/">
+            
+                    
+                    实际应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >atomic</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="atomic">Atomic</h2>
+<h4 id="&#x8BB2;&#x4E00;&#x4E0B;atomic&#x7684;&#x5B9E;&#x73B0;&#x673A;&#x5236;&#xFF1B;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x7EDD;&#x5BF9;&#x7684;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#xFF08;&#x6700;&#x597D;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x573A;&#x666F;&#x6765;&#x8BF4;&#xFF09;&#xFF1F;&#xFF08;&#x591A;&#x7EBF;&#x7A0B;&#x65B9;&#x9762;&#xFF0C;&#x5E95;&#x5C42;atomic&#x7684;&#x5B9E;&#x73B0;&#xFF09;">&#x8BB2;&#x4E00;&#x4E0B;atomic&#x7684;&#x5B9E;&#x73B0;&#x673A;&#x5236;&#xFF1B;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x7EDD;&#x5BF9;&#x7684;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#xFF08;&#x6700;&#x597D;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x573A;&#x666F;&#x6765;&#x8BF4;&#xFF09;&#xFF1F;&#xFF08;&#x591A;&#x7EBF;&#x7A0B;&#x65B9;&#x9762;&#xFF0C;&#x5E95;&#x5C42;atomic&#x7684;&#x5B9E;&#x73B0;&#xFF09;</h4>
+<p>&#x4F7F;&#x7528;atomic&#x4FEE;&#x9970;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x8BFB;&#x5199;&#x65B9;&#x5F0F;&#x4E3A;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x4E92;&#x65A5;&#x9501;&#x8FDB;&#x884C;&#x4FDD;&#x62A4;&#x3002;&#x8FD9;&#x628A;&#x9501;&#x662F;os_fair_lock&#x3002;</p>
+<pre><code>// &#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;
+id objc_getProperty(id self, SEL _cmd, ptrdiff_t offset, BOOL atomic) {
+    // Atomic retain release world
+    spinlock_t&amp; slotlock = PropertyLocks[slot];
+    slotlock.lock();
+    id value = objc_retain(*slot);
+    slotlock.unlock();
+
+    // for performance, we (safely) issue the autorelease OUTSIDE of the spinlock.
+    return objc_autoreleaseReturnValue(value);
+}
+</code></pre><p>&#x5E95;&#x5C42;&#x7EF4;&#x62A4;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x9501;&#x6570;&#x7EC4;&#xFF0C;&#x5B83;&#x7684;&#x5185;&#x90E8;&#x90FD;&#x662F;&#x4E92;&#x65A5;&#x9501;&#xFF0C;&#x901A;&#x8FC7;&#x4F20;&#x5165;&#x5BF9;&#x8C61;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x6765;&#x53BB;&#x6570;&#x7EC4;&#x4E2D;&#x83B7;&#x53D6;&#x76F8;&#x5E94;&#x7684;&#x4E92;&#x65A5;&#x9501;&#x3002;</p>
+<pre><code>// &#x5C5E;&#x6027;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;
+static inline void reallySetProperty(id self, SEL _cmd, id newValue, ptrdiff_t offset, bool atomic, bool copy, bool mutableCopy)
+{
+    if (!atomic) {
+        oldValue = *slot;
+        *slot = newValue;
+    } else {
+        spinlock_t&amp; slotlock = PropertyLocks[slot];
+        slotlock.lock();
+        oldValue = *slot;
+        *slot = newValue;        
+        slotlock.unlock();
+    }
+
+    objc_release(oldValue);
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kvo.html" class="navigation navigation-prev " aria-label="Previous page: KVO && KVC">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="associate.html" class="navigation navigation-next " aria-label="Next page: 关联对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"atomic","level":"1.4.3","depth":2,"next":{"title":"关联对象","level":"1.4.4","depth":2,"path":"Runtime/associate.md","ref":"Runtime/associate.md","articles":[]},"previous":{"title":"KVO && KVC","level":"1.4.2","depth":2,"path":"Runtime/kvo.md","ref":"Runtime/kvo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Runtime/atomic.md","mtime":"2020-01-04T13:53:27.079Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-04T16:39:31.403Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
