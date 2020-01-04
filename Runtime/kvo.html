@@ -17,11 +17,35 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
                 
             
                 
@@ -412,7 +436,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="kvo">KVO</h2>
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#kvo">KVO</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li> 
+<ul>
+<li><div><a href="#kvo&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#xFF1F;&#x5982;&#x4F55;&#x53D6;&#x6D88;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;kvo&#x5E76;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#xFF08;&#x7ED9;kvo&#x7684;&#x89E6;&#x53D1;&#x8BBE;&#x5B9A;&#x6761;&#x4EF6;&#xFF1A;&#x6539;&#x53D8;&#x7684;&#x503C;&#x7B26;&#x5408;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x65F6;&#x518D;&#x89E6;&#x53D1;kvo&#xFF09;&#xFF1F;">KVO&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#xFF1F;&#x5982;&#x4F55;&#x53D6;&#x6D88;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;KVO&#x5E76;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#xFF08;&#x7ED9;KVO&#x7684;&#x89E6;&#x53D1;&#x8BBE;&#x5B9A;&#x6761;&#x4EF6;&#xFF1A;&#x6539;&#x53D8;&#x7684;&#x503C;&#x7B26;&#x5408;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x65F6;&#x518D;&#x89E6;&#x53D1;KVO&#xFF09;&#xFF1F;</a><i></i></div></li>
+<li><div><a href="#&#x4F7F;&#x7528;&#x7684;&#x5751;">&#x4F7F;&#x7528;&#x7684;&#x5751;</a><i></i></div></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<h2 id="kvo">KVO</h2>
 <h4 id="kvo&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#xFF1F;&#x5982;&#x4F55;&#x53D6;&#x6D88;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;kvo&#x5E76;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#xFF08;&#x7ED9;kvo&#x7684;&#x89E6;&#x53D1;&#x8BBE;&#x5B9A;&#x6761;&#x4EF6;&#xFF1A;&#x6539;&#x53D8;&#x7684;&#x503C;&#x7B26;&#x5408;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x65F6;&#x518D;&#x89E6;&#x53D1;kvo&#xFF09;&#xFF1F;">KVO&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#xFF1F;&#x5982;&#x4F55;&#x53D6;&#x6D88;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;KVO&#x5E76;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#xFF08;&#x7ED9;KVO&#x7684;&#x89E6;&#x53D1;&#x8BBE;&#x5B9A;&#x6761;&#x4EF6;&#xFF1A;&#x6539;&#x53D8;&#x7684;&#x503C;&#x7B26;&#x5408;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x65F6;&#x518D;&#x89E6;&#x53D1;KVO&#xFF09;&#xFF1F;</h4>
 <p><a href="https://tech.glowing.com/cn/implement-kvo/" target="_blank">https://tech.glowing.com/cn/implement-kvo/</a></p>
 <ul>
@@ -430,9 +466,11 @@
 <li>&#x5FC5;&#x987B;&#x5728;&#x5408;&#x9002;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x79FB;&#x9664;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;&#x4E0D;&#x7136;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77;crash&#x3002;</li>
 <li>&#x6CE8;&#x518C;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x5904;&#x7684;&#x4EE3;&#x7801;&#x4E0A;&#x4E0B;&#x6587;&#x4E0D;&#x540C;&#xFF0C;&#x4F1A;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#x3002;</li>
 <li>&#x9700;&#x8981;&#x590D;&#x5199;&#x5F88;&#x957F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#x3002;</li>
-<li>&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x89C2;&#x5BDF;&#x5C5E;&#x6027;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5728;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x4E2D;&#x8FDB;&#x884C;if else&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x53EF;&#x8BFB;&#x6027;&#x4E0D;&#x9AD8;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x89C2;&#x5BDF;&#x5C5E;&#x6027;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5728;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x4E2D;&#x8FDB;&#x884C;if else&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x53EF;&#x8BFB;&#x6027;&#x4E0D;&#x9AD8;&#x3002; </li>
 </ul>
-
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; C4xx 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-01-04 21:49:12
+</span></footer>
                                 
                                 </section>
                             
@@ -475,7 +513,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"KVO && KVC","level":"1.4.2","depth":2,"next":{"title":"atomic","level":"1.4.3","depth":2,"path":"Runtime/atomic.md","ref":"Runtime/atomic.md","articles":[]},"previous":{"title":"分类","level":"1.4.1","depth":2,"path":"Runtime/category.md","ref":"Runtime/category.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Runtime/kvo.md","mtime":"2020-01-04T13:49:12.743Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-04T18:58:42.721Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"KVO && KVC","level":"1.4.2","depth":2,"next":{"title":"atomic","level":"1.4.3","depth":2,"path":"Runtime/atomic.md","ref":"Runtime/atomic.md","articles":[]},"previous":{"title":"分类","level":"1.4.1","depth":2,"path":"Runtime/category.md","ref":"Runtime/category.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","-highlight","-livereload","simple-page-toc","sectionx","tbfed-pagefooter","todo","toggle-chapters","back-to-top-button","code","simple-page-toc","page-treeview","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © C4xx 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"back-to-top-button":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Runtime/kvo.md","mtime":"2020-01-04T13:49:12.743Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-04T19:43:59.690Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -485,19 +523,31 @@
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
         
     
         
